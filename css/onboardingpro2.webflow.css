@@ -35,7 +35,7 @@ h3 {
   color: #6f7b85;
   font-size: 23px;
   line-height: 30px;
-  font-weight: 700;
+  font-weight: 300;
   text-align: center;
 }
 h4 {
@@ -61,6 +61,7 @@ h6 {
 }
 p {
   padding-top: 10px;
+  padding-left: 35px;
   font-family: Lato, sans-serif;
   color: #98a2ab;
   font-size: 22px;
@@ -70,8 +71,9 @@ p {
 }
 .button {
   display: inline-block;
-  width: 285px;
+  width: 350px;
   height: 60px;
+  margin-top: 50px;
   padding-top: 4px;
   padding-bottom: 4px;
   background-color: #ce3736;
@@ -91,7 +93,8 @@ p {
 }
 .button.center {
   display: block;
-  margin: 50px auto;
+  margin: 75px auto 50px;
+  float: none;
 }
 .top-hero {
   background-color: white;
@@ -111,12 +114,6 @@ p {
   padding-top: 50px;
   padding-bottom: 50px;
   border-left-style: none;
-}
-.section.user-onboarding {
-  margin-top: 50px;
-  margin-bottom: 50px;
-  padding-top: 150px;
-  padding-bottom: 150px;
 }
 .section.case-study {
   margin-top: 0px;
@@ -415,7 +412,10 @@ p {
   color: #ce3736;
 }
 .hero {
-  padding-bottom: 150px;
+  height: 700px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
 }
 .heading {
   margin-top: 0px;
@@ -440,17 +440,19 @@ p {
   color: #ce3736;
 }
 .nav-link.get-onboarding {
-  border: 1px solid #6f7b85;
+  border: 1px solid #ce3736;
   color: #6f7b85;
   font-weight: 300;
 }
 .nav-link.get-onboarding:hover {
   border: 1px solid #ce3736;
-  color: #ce3736;
+  background-color: #ce3736;
+  color: white;
+  font-weight: 300;
   text-decoration: none;
 }
 .nav-link.get-onboarding:active {
-  box-shadow: #a2a9ae 0px 0px 5px 0px inset;
+  box-shadow: rgba(0, 0, 0, 0.34) 0px 0px 3px 1px inset;
 }
 .hero-title {
   margin-top: 0px;
@@ -479,8 +481,9 @@ p {
 .hero-subtitle {
   font-family: Lato, sans-serif;
   color: #98a2ab;
-  font-size: 27px;
-  font-weight: 300;
+  font-size: 28px;
+  line-height: 32px;
+  font-weight: 400;
 }
 .underline {
   margin-top: -5px;
@@ -501,6 +504,7 @@ p {
 }
 .row {
   margin-right: auto;
+  margin-bottom: 50px;
   margin-left: auto;
   padding-top: 75px;
   padding-bottom: 0px;
@@ -569,6 +573,16 @@ p {
   margin-top: 25px;
   margin-right: auto;
   margin-left: auto;
+}
+.lightbox:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.lightbox:active {
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
 }
 html.w-mod-js *[data-ix="fade-down"] {
   opacity: 0;
