@@ -240,7 +240,6 @@ a {
   overflow-x: hidden;
   overflow-y: hidden;
   height: 100%;
-  border: 1px solid #1683cc;
 }
 .section.blue {
   background-color: #1683cc;
@@ -494,4 +493,9 @@ a {
   src: url('../fonts/HVD Fonts - BrandonText-BlackItalic.otf') format('opentype');
   font-weight: 600;
   font-style: italic;
+}
+
+
+.border-decoration-style {
+    border: 1px solid #1683cc;
 }
