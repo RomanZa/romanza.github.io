@@ -136,13 +136,13 @@
 }
 
 .content-section {
-  padding-top: 50px;
+  padding-top: 35px;
 }
 
 .content-section.gray {
-  height: 100vh;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  height: auto;
+  padding-top: 35px;
+  padding-bottom: 75px;
   background-color: #f6f6f7;
   color: #f6f6f7;
 }
@@ -157,7 +157,7 @@
 }
 
 .section-header {
-  margin-top: 50px;
+  margin-top: 25px;
   padding-top: 25px;
   padding-bottom: 0px;
   font-family: 'Brandon Text', sans-serif;
@@ -381,7 +381,7 @@
 }
 
 .footer-link:hover {
-  color: #ce3736;
+  color: #1683cc;
 }
 
 .footer-logo {
@@ -471,7 +471,7 @@
 
 .approach-title {
   margin-top: 50px;
-  margin-left: 45px;
+  margin-left: 15px;
   font-family: 'Brandon Text', sans-serif;
   color: #1683cc;
   font-size: 26px;
@@ -482,17 +482,17 @@
 .approach-text {
   margin-top: 0px;
   margin-bottom: 0px;
-  margin-left: 45px;
+  margin-left: 15px;
   padding-top: 15px;
   padding-bottom: 55px;
   font-family: 'Brandon Text', sans-serif;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 28px;
   font-weight: 400;
 }
 
 .academy-link {
-  margin-left: 45px;
+  margin-left: 15px;
   font-family: 'Brandon Text', sans-serif;
   color: #1683cc;
   font-size: 18px;
@@ -518,13 +518,10 @@
   text-decoration: none;
 }
 
-.approach-image {
-  margin-top: 55px;
-}
-
 .guide-image {
   display: block;
-  margin: 45px auto;
+  margin-right: auto;
+  margin-left: auto;
   float: none;
 }
 
@@ -533,31 +530,43 @@
 }
 
 .guide-title {
-  margin-top: 100px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
   font-family: 'Brandon Text', sans-serif;
   color: #1683cc;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 30px;
   font-weight: 500;
+  text-align: center;
 }
 
 .guide-description {
-  padding-top: 15px;
-  padding-bottom: 55px;
+  display: block;
+  width: 485px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 15px 15px 25px;
   font-family: 'Brandon Text', sans-serif;
   color: #75858f;
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
+  text-align: center;
 }
 
 .guide-button {
+  display: block;
+  width: 265px;
+  margin-right: auto;
+  margin-left: auto;
   padding: 15px 35px;
   border-radius: 4px;
   background-color: #1683cc;
   font-family: 'Brandon Text', sans-serif;
   font-size: 16px;
   font-weight: 500;
+  text-align: center;
 }
 
 .guide-button:hover {
@@ -612,20 +621,51 @@
   margin-left: auto;
   padding: 15px 35px;
   border-radius: 4px;
-  background-color: #1683cc;
   font-family: 'Brandon Text', sans-serif;
   font-size: 18px;
   font-weight: 500;
   text-align: center;
 }
 
-.lets-talk-button:hover {
-  background-color: #0a71b6;
+.jetway-button {
+  display: block;
+  width: 265px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 15px 35px;
+  border-radius: 4px;
+  background-color: #ff9954;
+  font-family: 'Brandon Text', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.jetway-button:hover {
+  background-color: #ff8431;
+}
+
+.jetway-title {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: 'Brandon Text', sans-serif;
+  color: #ff9954;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 500;
+  text-align: center;
 }
 
 @media (max-width: 991px) {
   .hero-image {
     max-width: 100%;
+  }
+  .hero-header {
+    width: 400px;
+  }
+  .hero-subheader {
+    width: 420px;
   }
   .navbar-link {
     text-align: center;
@@ -643,6 +683,12 @@
     padding-right: 12px;
     padding-left: 12px;
   }
+  .footer-header {
+    padding-left: 35px;
+  }
+  .footer-link {
+    padding-left: 35px;
+  }
   .plan-button {
     margin-top: 75px;
   }
@@ -651,6 +697,9 @@
   }
   .mobile-menu {
     padding-bottom: 25px;
+  }
+  .guide-description {
+    width: 355px;
   }
 }
 
@@ -690,8 +739,17 @@
     margin-left: auto;
     text-align: center;
   }
+  .hero-section {
+    height: auto;
+  }
+  .content-section.gray {
+    height: auto;
+  }
   .use-case-div {
     margin-bottom: 15px;
+  }
+  .message-card {
+    margin-bottom: 0px;
   }
   .message-description {
     display: block;
@@ -702,11 +760,45 @@
   .try-me-link {
     margin-bottom: 15px;
   }
+  .footer-header {
+    padding-left: 0px;
+    text-align: center;
+  }
+  .footer-link {
+    padding-left: 0px;
+    text-align: center;
+  }
   .plan-button {
     margin-bottom: 35px;
   }
   .mobile-menu {
     padding-bottom: 25px;
+  }
+  .approach-title {
+    margin-top: 0px;
+    text-align: center;
+  }
+  .approach-text {
+    text-align: center;
+  }
+  .academy-link {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+  .approach-image {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .customer-logo {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .column-2 {
+    margin-bottom: 35px;
   }
 }
 
@@ -751,8 +843,11 @@
     margin-left: auto;
     text-align: center;
   }
+  .content-section.gray {
+    height: auto;
+  }
   .section-subheader {
-    width: 300px;
+    width: 315px;
   }
   .use-case-div {
     margin-bottom: 15px;
@@ -764,10 +859,12 @@
     padding-bottom: 15px;
   }
   .footer-header {
-    padding-left: 50px;
+    padding-left: 0px;
+    text-align: center;
   }
   .footer-link {
-    padding-left: 50px;
+    padding-left: 0px;
+    text-align: center;
   }
   .plan-button {
     margin-bottom: 35px;
@@ -779,40 +876,41 @@
     padding-bottom: 25px;
   }
   .approach-title {
-    margin-left: 0px;
-    text-align: center;
+    margin-top: 0px;
+    margin-left: auto;
   }
   .approach-text {
-    margin-left: 0px;
-    text-align: center;
+    margin-left: auto;
   }
   .academy-link {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center;
-  }
-  .approach-image {
-    display: block;
-    margin-right: auto;
     margin-left: auto;
   }
-  .guide-button {
-    display: block;
-    width: 265px;
-    margin-right: auto;
-    margin-left: auto;
+  .guide-title {
+    width: 280px;
+    line-height: 24px;
+  }
+  .guide-description {
+    width: 305px;
   }
   .customer-logo {
     display: block;
     margin-right: auto;
     margin-left: auto;
   }
-  .lets-talk {
-    margin-top: 535px;
-  }
   .lets-talk-subheader {
-    width: 275px;
+    width: 320px;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+  .column {
+    padding-bottom: 50px;
+  }
+  .column-2 {
+    margin-bottom: 50px;
+  }
+  .jetway-title {
+    width: 280px;
+    line-height: 24px;
   }
 }
 
