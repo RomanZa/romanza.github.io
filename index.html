@@ -52,7 +52,9 @@ Smooch.init({
                 sendButtonText: 'Send'
        }
 }).then(function() {
-            // Your code after init is complete
+            Tooltip.API.on("open_smooch", function(){
+Smooch.open();
+ });
         },function(err) {
             // Something went wrong during initialization
         });
@@ -167,8 +169,4 @@ Smooch.init({
     });
 </script>
 </body>
-<script>
-Tooltip.API.on("open_smooch", function(){Smooch.open();
-	});
-</script>
 </html>
