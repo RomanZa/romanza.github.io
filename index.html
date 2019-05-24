@@ -44,21 +44,11 @@ n.async=o.async,s.parentNode.insertBefore(n,s),n.src=o.url}(document,"script");
     }(window,document,"Smooch","58d904070b2ada3f00aa217b");
 </script>
 <script>
-Smooch.init({
-    appId: '58d904070b2ada3f00aa217b',
-    customText: {
-                headerText: 'Let\'s chat',
-                inputPlaceholder: 'Type a message...',
-                sendButtonText: 'Send'
-       }
-}).then(
-    function() {
-        // Your code after init is complete
-    },
-    function(err) {
-        // Something went wrong during initialization
-    }
-);
+Smooch.init({appId: '58d904070b2ada3f00aa217b'}).then(function() {
+Tooltip.API.on("open_smooch", function(){
+Smooch.open();
+ });
+    });
 </script>
 	<style>
 	#sk-holder #sk-messenger-button {
@@ -71,11 +61,6 @@ Smooch.init({
 	display: none;
 	}
 	</style>
-	<script>
-	Signalayer.API.on("open_smooch", function(){
-Smooch.open();
-});
-	</script>
 </head>
 <body>
   <div class="hero-section">
