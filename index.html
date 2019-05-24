@@ -51,12 +51,14 @@ Smooch.init({
                 inputPlaceholder: 'Type a message...',
                 sendButtonText: 'Send'
        }
-}).then(function() {
-      	    // Your code
- 	});
-        },function(err) {
-            // Something went wrong during initialization
-        });
+}).then(
+            function() {
+                // Your code after init is complete
+            },
+            function(err) {
+                // Something went wrong during initialization
+            }
+        );
 </script>
 	<style>
 	#sk-holder #sk-messenger-button {
@@ -164,9 +166,8 @@ Smooch.init({
   <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
 </body>
 	<script>
-	Smooch.init({appId: '58d904070b2ada3f00aa217b'}).then(function() {
-Tooltip.API.on("open_smooch", function(){
-Smooch.open();
+Smooch.init({appId: '58d904070b2ada3f00aa217b'}).then(function() {
+Tooltip.API.on("open_smooch", function(){Smooch.open();
  });
     });
 	</script>
