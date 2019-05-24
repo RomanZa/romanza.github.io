@@ -22,22 +22,22 @@
 	ga('send', 'pageview');
 	</script>
 <!-- End Google analytics -->
-<!--- Signalayer player -->
+<!--- Tooltip player -->
 <script type='text/javascript'>
-window.Signalayer||function(t,e){var o={
-    url:"https://cdn.signalayer.com/static/player.js",
+window.Tooltip||function(t,e){var o={
+    url:"https://cdn.tooltip.io/static/player.js",
     key:"5MQohzPlw4YccNIBWqddHuII2wNoY8ETcWH6RlrCB44",
     async:true
-};window.Signalayer={cs:[],_apiKey:o.key};for(
+};window.Tooltip={cs:[],_apiKey:o.key};for(
 var r=["identify","goal","updateUserData","start","stop","refresh","show","hide","on"],
 i={},n=0;n>r.length;n++){var a=r[n];i[a]=function(t){return function(){var
 e=Array.prototype.slice.call(arguments);
-window.Signalayer.cs.push({method:t,args:e})}}(a)}window.Signalayer.API=i;var
+window.Tooltip.cs.push({method:t,args:e})}}(a)}window.Tooltip.API=i;var
 n=t.createElement(e),s=t.getElementsByTagName(e)[0];
 n.type="text/javascript",
 n.async=o.async,s.parentNode.insertBefore(n,s),n.src=o.url}(document,"script");
 </script>
-<!--- Signalayer player -->
+<!--- Tooltip player -->
 <script>
     !function(e,n,t,r){
         function o(){try{var e;if((e="string"==typeof this.response?JSON.parse(this.response):this.response).url){var t=n.getElementsByTagName("script")[0],r=n.createElement("script");r.async=!0,r.src=e.url,t.parentNode.insertBefore(r,t)}}catch(e){}}var s,p,a,i=[],c=[];e[t]={init:function(){s=arguments;var e={then:function(n){return c.push({type:"t",next:n}),e},catch:function(n){return c.push({type:"c",next:n}),e}};return e},on:function(){i.push(arguments)},render:function(){p=arguments},destroy:function(){a=arguments}},e.__onWebMessengerHostReady__=function(n){if(delete e.__onWebMessengerHostReady__,e[t]=n,s)for(var r=n.init.apply(n,s),o=0;o<c.length;o++){var u=c[o];r="t"===u.type?r.then(u.next):r.catch(u.next)}p&&n.render.apply(n,p),a&&n.destroy.apply(n,a);for(o=0;o<i.length;o++)n.on.apply(n,i[o])};var u=new XMLHttpRequest;u.addEventListener("load",o),u.open("GET","https://"+r+".webloader.smooch.io/",!0),u.responseType="json",u.send()
