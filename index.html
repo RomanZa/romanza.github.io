@@ -52,9 +52,8 @@ Smooch.init({
                 sendButtonText: 'Send'
        }
 }).then(function() {
-            Tooltip.API.on("open_smooch", function(){
-Smooch.open();
- });
+      	    // Your code
+ 	});
         },function(err) {
             // Something went wrong during initialization
         });
@@ -164,4 +163,11 @@ Smooch.open();
   <script src="js/webflow.js" type="text/javascript"></script>
   <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
 </body>
+	<script>
+	Smooch.init({appId: '58d904070b2ada3f00aa217b'}).then(function() {
+Tooltip.API.on("open_smooch", function(){
+Smooch.open();
+ });
+    });
+	</script>
 </html>
