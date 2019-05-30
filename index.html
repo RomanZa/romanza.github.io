@@ -49,9 +49,15 @@ Signalayer.API.on("open_smooch", function(){
     }(window,document,"Smooch","58d904070b2ada3f00aa217b");
 </script>
 <script>
-Smooch.init({appId: '58d904070b2ada3f00aa217b'}).then(function() {Signalayer.API.on("open_smooch", function(){Smooch.open();
- });
-    });
+    Smooch.init({ appId: '58d904070b2ada3f00aa217b' })
+        .then(
+            function() {
+                // Your code after init is complete
+            },
+            function(err) {
+                // Something went wrong during initialization
+            }
+        );
 </script>
 	<style>
 	#sk-holder #sk-messenger-button {
